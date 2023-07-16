@@ -24,22 +24,22 @@ export const Navbar = () => {
     <div
       className={`${
         fix
-          ? "bg-black bg-opacity-90 transition-all ease-in-out duration-500 "
+          ? "bg-black bg-opacity-90 transition-all ease-in-out duration-700 "
           : ""
-      } flex justify-between items-center h-24 mx-auto md:px-10 px-6  fixed top-0 w-full bg-transparent text-black md:w-full z-50`}
+      } flex justify-between items-center h-24 mx-auto md:px-10 px-6  fixed top-0 w-full text-black md:w-full z-50`}
     >
       <a href="#home">
         <img className="w-32 md:w-44" src={logo} alt="" />
       </a>
       <ul className="hidden md:flex font-semibold">
         <a href="#home">
-          <li className="p-4 hover:text-white text-primary">Home</li>
-        </a>
-        <a href="#about">
           <li className="p-4 hover:text-white text-primary">About</li>
         </a>
         <a href="#features">
           <li className="p-4 hover:text-white text-primary">Features</li>
+        </a>
+        <a href="#download">
+          <li className="p-4 hover:text-white text-primary">Download</li>
         </a>
         <a href="#contact">
           <li className="py-4 pl-4 hover:text-white text-primary">Contact</li>
@@ -63,17 +63,17 @@ export const Navbar = () => {
         <ul className="uppercase p-4">
           <a onClick={handleNav} href="#home">
             <li className="p-4 border-b border-white text-primary active:bg-white">
-              Home
-            </li>
-          </a>
-          <a onClick={handleNav} href="#about">
-            <li className="p-4 border-b border-white text-primary active:bg-white">
               About
             </li>
           </a>
           <a onClick={handleNav} href="#features">
             <li className="p-4 border-b border-white text-primary active:bg-white">
               Features
+            </li>
+          </a>
+          <a onClick={handleNav} href="#download">
+            <li className="p-4 border-b border-white text-primary active:bg-white">
+              Download
             </li>
           </a>
           <a onClick={handleNav} href="#contact">

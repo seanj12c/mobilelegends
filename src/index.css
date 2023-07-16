@@ -6,5 +6,6 @@
 
 html {
   font-family: "Prompt", sans-serif;
+  background-color: black;
   scroll-behavior: smooth !important;
 }
